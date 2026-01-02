@@ -1,0 +1,2 @@
+# kurumsalpress
+kurumsal wordpress teması
