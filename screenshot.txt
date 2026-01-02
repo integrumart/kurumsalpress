@@ -1,0 +1,4 @@
+# Screenshot Placeholder
+# WordPress themes require a screenshot.png file (1200x900px recommended)
+# This should be replaced with an actual screenshot of the theme
+# For now, this file serves as a placeholder reminder
