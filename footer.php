@@ -30,7 +30,7 @@
 
             <div class="site-info">
                 <p>
-                    &copy; <?php echo date( 'Y' ); ?> 
+                    &copy; <?php echo esc_html( date_i18n( 'Y' ) ); ?> 
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                         <?php bloginfo( 'name' ); ?>
                     </a>

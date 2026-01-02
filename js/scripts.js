@@ -106,15 +106,14 @@
     backToTopButton.innerHTML = '↑';
     backToTopButton.setAttribute('id', 'back-to-top');
     backToTopButton.setAttribute('aria-label', 'Back to top');
-    backToTopButton.style.cssText = 'position: fixed; bottom: 20px; right: 20px; display: none; padding: 15px 20px; background: #3498db; color: #fff; border: none; border-radius: 50px; cursor: pointer; z-index: 999; font-size: 1.5rem; box-shadow: 0 4px 10px rgba(0,0,0,0.2); transition: all 0.3s ease;';
 
     document.body.appendChild(backToTopButton);
 
     window.addEventListener('scroll', function() {
         if (window.scrollY > 300) {
-            backToTopButton.style.display = 'block';
+            backToTopButton.classList.add('show');
         } else {
-            backToTopButton.style.display = 'none';
+            backToTopButton.classList.remove('show');
         }
     });
 
@@ -123,16 +122,6 @@
             top: 0,
             behavior: 'smooth'
         });
-    });
-
-    backToTopButton.addEventListener('mouseenter', function() {
-        this.style.background = '#2c3e50';
-        this.style.transform = 'translateY(-5px)';
-    });
-
-    backToTopButton.addEventListener('mouseleave', function() {
-        this.style.background = '#3498db';
-        this.style.transform = 'translateY(0)';
     });
 
 })();
