@@ -110,7 +110,7 @@ get_header();
                             the_excerpt();
                             ?>
                             <a href="<?php the_permalink(); ?>" class="more-link">
-                                <?php esc_html_e( 'Read More &rarr;', 'kurumsalpress' ); ?>
+                                <?php esc_html_e( 'Read More', 'kurumsalpress' ); ?> &rarr;
                             </a>
                             <?php
                         endif;
@@ -124,8 +124,8 @@ get_header();
             // Pagination
             the_posts_pagination( array(
                 'mid_size'  => 2,
-                'prev_text' => esc_html__( '&laquo; Previous', 'kurumsalpress' ),
-                'next_text' => esc_html__( 'Next &raquo;', 'kurumsalpress' ),
+                'prev_text' => sprintf( '%s %s', '«', esc_html__( 'Previous', 'kurumsalpress' ) ),
+                'next_text' => sprintf( '%s %s', esc_html__( 'Next', 'kurumsalpress' ), '»' ),
             ) );
 
         else :
