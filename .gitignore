@@ -1,0 +1,53 @@
+# WordPress core files
+wp-config.php
+wp-content/uploads/
+wp-content/blogs.dir/
+wp-content/upgrade/*
+wp-content/backup-db/*
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/cache/*
+wp-content/cache/supercache/*
+
+# Node modules
+node_modules/
+npm-debug.log
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# Editor files
+*.sublime-project
+*.sublime-workspace
+.idea/
+*.code-workspace
+.vscode/
+
+# Sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# Build files
+/dist/
+/build/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+
+# Package manager lock files (optional)
+# Uncomment if you don't want to commit these
+# package-lock.json
+# yarn.lock
+# composer.lock
